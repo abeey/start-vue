@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- saved from url=(0137)https://a2.udemycdn.com/2019-05-30_18-59-45-852ebb292e27b1cde6f269164e7da559/original.html?nva=20200302083758&token=0f0e613c6e46a234e50f2 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+
+
+    <div class="container">
+      <div id="app">
+
+      <form action="">
+        <div class="col-sm-6">
+          <input v-model="options" type="text" class="form-control"></div>
+
+        <!-- checklist Button -->
+          <fieldset class="form-group">
+              <legend>Checklist buttons</legend> 
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input v-model="options" type="checkbox" name="optionsRadios" id="optionsRadios1" value="option-1"  class="form-check-input"> Option one is this and that—be sure to include why it's great
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input v-model="options" type="checkbox" name="optionsRadios" id="optionsRadios2" value="option-2" class="form-check-input"> Option two can be something else and selecting it will deselect option one</label>
+                </div> 
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input v-model="options"  type="checkbox" name="optionsRadios" id="optionsRadios3" value="option-3" class="form-check-input"> Option three is disabled</label>
+                </div>
+            </fieldset> 
+              <p> You selected  {{options.join(' , ')}}</p>
+          </form>
+
+        </div>
+    </div>
+
+   
+   
+<script src="assets/vue.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+ 
+ <script>
+     
+     let vm = new Vue({
+         
+         el: '#app',
+         data: {
+             options: [],
+             message: ''
+
+         }
+           
+     })
+    
+</script>
+
+
+
+
+</body></html>
