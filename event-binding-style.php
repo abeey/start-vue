@@ -30,7 +30,7 @@
 
 
 <script>
-	let vm = new Vue({
+	new Vue({
 		el : '#app',
 		data :{
 			name : 'Febri Nahrul Khayat',
@@ -45,8 +45,8 @@
 			decreaseFont (){
 				this.fontSize--;
 			}
-		
 		},
+
 	})
 </script>
 
